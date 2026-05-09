@@ -8,6 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import NavBar from '~/components/layout/NavBar';
+import Footer from '~/components/layout/Footer';
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -19,7 +21,7 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tourney:wght@100..900&display=swap",
   },
 ];
 
@@ -32,7 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-cyber-bg text-white selection:bg-neon-pink selection:text-white">
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -42,7 +44,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div className="flex flex-col min-h-screen">
+      <NavBar />
+      <main className="flex-grow pt-20">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

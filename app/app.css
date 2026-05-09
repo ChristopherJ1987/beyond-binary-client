@@ -1,8 +1,24 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Tourney:wght@100..900&display=swap');
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Define Brand Styling */
+
+  /* Colors */
+  --color-cyber-bg: #0A0A0A;
+  --color-neon-pink: #FF44FF;
+  --color-neon-yellow: #FFDD44;
+  --color-neon-green: #55FF44;
+  --color-neon-cyan: #44FFFF;
+  --color-neon-magenta: #EE00FF;
+
+
+  /* Fonts */
+  --font-header: "Tourney", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Spacing System */
+  --spacing-section: 5rem;
 }
 
 html,

@@ -13,8 +13,12 @@ export default function Hero() {
                 Bridging the gap between raw code and humanity.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
-                <NeonButton text="Get Started" to="/contact" variant="cyan" />
-                <NeonButton text="View Portfolio" to="/portfolio" variant="pink" />
+                <NeonButton variant="cyan" size="lg" to="/contact" className={""}>
+                    Get Started
+                </NeonButton>
+                <NeonButton variant="pink" size="lg" to="/portfolio" className={""}>
+                    View Portfolio
+                </NeonButton>
             </div>
         </section>
     );

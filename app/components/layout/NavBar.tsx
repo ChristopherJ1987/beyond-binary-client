@@ -1,4 +1,6 @@
 import { Link, NavLink } from "react-router";
+import Logo from "../../../public/images/logo/bb_logo.png";
+import NeonButton from "../ui/NeonButton";
 
 export default function NavBar() {
     const navLinks = [
@@ -6,15 +8,14 @@ export default function NavBar() {
         { name: "Services", to: "/services" },
         { name: "Portfolio", to: "/portfolio" },
         { name: "About", to: "/about" },
-        { name: "Contact", to: "/contact" },
     ];
 
     return(
-        <nav className="fixed top-0 w-full z-50 border-b border-white/10 by-cyper-bg/80 backdrop-blur-md">
-            <div className="max-w 7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-cyper-bg/80 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 {/* Logo Section */}
-                <Link to="/" className="font-header text-2xl text-neon-cyan tracking-tighterhover:glow-cyan transition-all">
-                    Beyond Binary
+                <Link to="/" className="flex items-center h-full group">
+                    <img src={Logo} alt="Beyond Binary Logo" className="h-12 w-auto object-contain transition-all duration-500 brightness-66 group-hover:brightness-5 group-hover:drop-shadow-[0_0_10px_rgba(0,242,255,0.8)]" />
                 </Link>
                 {/* Navigation Links */}
                 <div className="hidden md:flex items-center gap-8">
@@ -29,8 +30,8 @@ export default function NavBar() {
                     {/* Action Button */}
                     <Link
                         to="/contact"
-                        className="ml-4 px-5 py-2 border border-neon-cyan text-neon-cyan text-xs font-bold rounded uppercase hover:bg-neon-cyan hover:text-black transition-all shadow-[0_0_10px_rgba(0,242,255,0.3)]">
-                        Start Project
+                        className="ml-4 px-5 py-2 border border-neon-cyan text-neon-cyan text-xs font-bold rounded uppercase hover:bg-neon-cyan hover:text-black transition-all group-hover:drop-shadow-[0_0_10px_rgba(0,242,255,0.8)]">
+                        Contact Us
                     </Link>
                 </div>
             </div>

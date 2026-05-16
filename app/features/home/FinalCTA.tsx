@@ -20,12 +20,8 @@ export default function FinalCTA() {
                     </p>
 
                     <div className="flex flex-col md:flex-row justify-center gap-6">
-                        <NeonButton variant="cyan" size="lg" to={""} className={""}>
-                            Start Some Shit
-                        </NeonButton>
-                        <NeonButton variant="pink" size="lg" to={""} className={""}>
-                            View Services
-                        </NeonButton>
+                        <NeonButton text="Talk Some Shit" to="/contact" variant="cyan" size="lg" className={""} />
+                        <NeonButton text="View Services" to="/services" variant="pink" size="lg" className={""} />
                     </div>
                 </div>
             </div>

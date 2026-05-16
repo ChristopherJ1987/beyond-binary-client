@@ -10,7 +10,7 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div className="flex flex-col gap-4">
                     <h3 className="font-header text-xl text-neon-cyan">BEYOND BINARY</h3>
-                    <p className="font-body text-sm text-white/40 max-w-[250px]">Bridging the gap between raw code and human-centric design.</p>
+                    <p className="font-body text-sm text-white/40 max-w-62.5">Bridging the gap between raw code and human-centric design.</p>
                 </div>
 
                 {/* Quick Links */}

@@ -26,7 +26,7 @@ export default function NeonButton({ text, to, variant = "cyan", size = "md", cl
     return (
         <Link
             to={to}
-            className={`$baseClass} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
+            className={`${baseClass} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
         >
             {text}
         </Link>

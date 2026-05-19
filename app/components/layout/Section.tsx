@@ -8,9 +8,11 @@ export default function Section({ children, className = "", id }: SectionProps) 
     return (
         <section
             id={id}
-            className={`py-20 px-6 md:px-12 lg:px-24 msx-w-7xl mx-auto ${className}`}
+            className={`w-full py-16 md:py-24 ${className}`}
         >
-            {children}
+            <div className="max-w-360 mx-auto px-6 md:px-12">
+                {children}
+            </div>
         </section>
     );
 }

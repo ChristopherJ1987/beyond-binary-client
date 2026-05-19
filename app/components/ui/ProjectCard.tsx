@@ -3,19 +3,22 @@ import type { Project } from "~/lib/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
     return (
-        <div className="group relative flex flex-col bg-card-bg border border-white/5 overflow-hidden transition-all duration-500 hover:border-neon-cyan/30 h-full">
+        <div className="group relative flex flex-col bg-card-bg border border-white/5 overflow-hidden transition-all duration-500 hover:border-neon-cyan/30 w-full h-full">
+            
             {/* Image Container */}
-            <div className="relative h-64 w-full overflow-hidden">
+            <div className="relative h-64 w-full overflow-hidden shrink-0">
                 <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
                 />
-                {/* Neon Overlay on Hover */}
                 <div className="absolute inset-0 bg-linear-to-t from-cyber-bg via-transparent to-transparent opacity-60" />
             </div>
+
             {/* Content Area */}
-            <div className="p-6 flex flex-col gap-3">
+            <div className="p-6 flex flex-col grow gap-3">
+                
+                {/* Category & Tags */}
                 <div className="flex justify-between items-center">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-neon-pink font-header">
                         {project.category}
@@ -28,23 +31,35 @@ export default function ProjectCard({ project }: { project: Project }) {
                         ))}
                     </div>
                 </div>
-                <h3 className="font-header text-xl text-white tracking-tight group-hover:text-neon-cyan transition-colors min-h-13.75">
-                    {project.title}
-                </h3>
-                <p className="font-body text-sm text-white/50 line-clamp-2 min-h-13.75">
-                    {project.description}
-                </p>
-                <div className="mt-auto pt-6 flex flex-wrap gap-6">
+
+                {/* Title Container */}
+                <div className="h-14 flex items-end">
+                    <h3 className="font-header text-xl text-white tracking-tight group-hover:text-neon-cyan transition-colors line-clamp-2 leading-tight">
+                        {project.title}
+                    </h3>
+                </div>
+
+                {/* Description Box */}
+                <div className="grow">
+                    <p className="font-body text-sm text-white/50 line-clamp-3 leading-relaxed">
+                        {project.description}
+                    </p>
+                </div>
+
+                {/* Action Links */}
+                <div className="mt-auto pt-6 border-t border-white/5 flex flex-wrap gap-6">
                     <a
                         href={project.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan w-fit pb-1 hover:text-neon-cyan transition-all">
+                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
+                    >
                         Visit Site →
                     </a>
                     <Link
                         to={`/portfolio/${project.caseStudySlug}`}
-                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan w-fit pb-1 hover:text-neon-cyan transition-all">
+                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
+                    >
                         View Case Study →
                     </Link>
                 </div>

@@ -3,13 +3,9 @@ import NeonButton from "~/components/ui/NeonButton";
 
 export default function FinalCTA() {
     return (
-        <Section id="contact" className="py-24 border-t border-white/5 overflow-hidden">
-            <div className="relative overflow-hidden bg-card-bg border-border-neon-cyan/20 p-12 md:p-20 text-center rounded-sm max-w-5xl mx-auto">
-                
-                {/* Subtle Background Glow */}
-                <div className="absolute -top-24 -left-24 w-64 h-64 bg-neon-pink/5 blur-[120px] rounded-full pointer-events-none" />
-                <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-neon-cyan/5 blur-[120px] rounded-full pointer-events-none" />
+        <Section id="contact" className="border-t border-white/5 relative bg-cyber-bg">
 
+            <div className="relative z-10 bg-card-bg/60 backdrop-blur-md border border-white/5 p-12 md:p-20 text-center rounded-sm w-full">
                 <div className="relative z-10 flex flex-col items-center justify-center">
                     <h2 className="font-header text-4xl md:text-6xl text-white uppercase italic mb-6 leading-tight tracking-tight">
                         Ready to move <br />

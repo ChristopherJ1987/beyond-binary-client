@@ -42,7 +42,7 @@ export default function OurProcess() {
 
                 <Link
                     to="/services"
-                    className="font-header text-xs tracking-[0.3em] text-white/60 hover:text-neon-pink transition-all border-b border-white/10 hover:border-neon-pink pb-2 uppercase shrink-0 default-focus">
+                    className="font-body text-xs tracking-[0.3em] text-white/60 hover:text-neon-pink transition-all border-b border-white/10 hover:border-neon-pink pb-2 uppercase shrink-0 default-focus">
                     View All Services →
                 </Link>
             </div>

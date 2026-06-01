@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
 
                 <Link
                     to="/portfolio"
-                    className="font-header text-xs tracking-[0.3em] text-white/60 hover:text-neon-cyan transition-all border-b border-white/10 hover:border-neon-cyan pb-2 uppercase shrink-0 default-focus">
+                    className="font-body text-xs tracking-[0.3em] text-white/60 hover:text-neon-cyan transition-all border-b border-white/10 hover:border-neon-cyan pb-2 uppercase shrink-0 default-focus">
                     View All Projects →
                 </Link>
             </div>

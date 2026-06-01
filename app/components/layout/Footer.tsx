@@ -1,6 +1,9 @@
 import { Link } from "react-router";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
+
     const currentYear = new Date().getFullYear();
 
     return (
@@ -21,11 +24,31 @@ export default function Footer() {
                 </div>
 
                 {/* Copyright & Social */}
-                <div className="flex flex-col items-end gap-2 text-sm font-body text-white/30">
+                <div className="flex flex-col items-center md:items-end text-center md:text-right gap-2 text-sm font-body text-white/30">
                     <div className="flex gap-4 mb-2">
-                        {/* Replace # with your actual social links */}
-                        <a href="#" className="hover:text-neon-cyan transition-colors italic">GitHub</a>
-                        <a href="#" className="hover:text-neon-cyan transition-colors italic">LinkedIn</a>
+                        <div className="flex items-center gap-6">
+                            {/* GitHub Link */}
+                            <a 
+                                href="https://github.com/ChristopherJ1987" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="Visit Beyond Binary GitHub Organization"
+                                className="text-white/40 hover:text-neon-cyan transition-all duration-300 transform hover:scale-110"
+                            >
+                                <SiGithub className="w-5 h-5" />
+                            </a>
+
+                            {/* LinkedIn Link */}
+                            <a 
+                                href="https://www.linkedin.com/in/chris-jones-299178397/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                aria-label="Connect with Beyond Binary on LinkedIn"
+                                className="text-white/40 hover:text-neon-pink transition-all duration-300 transform hover:scale-110"
+                            >
+                                <FaLinkedin className="w-5 h-5" />
+                            </a>
+                        </div>
                     </div>
                     <p>© {currentYear} Beyond Binary. All rights reserved.</p>
                 </div>

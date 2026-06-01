@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 
                 {/* Category & Tags */}
                 <div className="flex justify-between items-center">
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-neon-pink font-header">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-neon-pink font-body">
                         {project.category}
                     </span>
                     <div className="flex gap-2">
@@ -52,13 +52,13 @@ export default function ProjectCard({ project }: { project: Project }) {
                         href={project.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
+                        className="text-[11px] font-body text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
                     >
                         Visit Site →
                     </a>
                     <Link
                         to={`/portfolio/${project.caseStudySlug}`}
-                        className="text-[11px] font-header text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
+                        className="text-[11px] font-body text-white uppercase tracking-widest border-b border-neon-cyan pb-1 hover:text-neon-cyan transition-all w-fit"
                     >
                         View Case Study →
                     </Link>

@@ -1,5 +1,6 @@
 import Section from "~/components/layout/Section";
 import PageHeader from "~/components/ui/PageHeader";
+import AboutHero from "~/features/about/AboutHero";
 
 export default function AboutPage() {
     return (
@@ -11,6 +12,7 @@ export default function AboutPage() {
                 accentColor="pink"
                 description="Initializing Beyond Binary history and data grid."
             />
+            <AboutHero />
         </Section>
     )
 }

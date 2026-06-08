@@ -1,6 +1,7 @@
 import Section from "~/components/layout/Section";
 import PageHeader from "~/components/ui/PageHeader";
 import AboutHero from "~/features/about/AboutHero";
+import CoreValues from "~/features/about/CoreValues";
 
 export default function AboutPage() {
     return (
@@ -13,6 +14,7 @@ export default function AboutPage() {
                 description="Initializing Beyond Binary history and data grid."
             />
             <AboutHero />
+            <CoreValues />
         </Section>
     )
 }

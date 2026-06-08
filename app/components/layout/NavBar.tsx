@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router";
-import Logo from "../../../public/images/logo/bb_logo.png";
+import Logo from "/images/logo/bb_logo.png";
 
 export default function NavBar() {
     const navLinks = [

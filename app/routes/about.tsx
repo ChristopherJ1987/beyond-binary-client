@@ -2,6 +2,7 @@ import Section from "~/components/layout/Section";
 import PageHeader from "~/components/ui/PageHeader";
 import AboutHero from "~/features/about/AboutHero";
 import CoreValues from "~/features/about/CoreValues";
+import CareerJourney from "~/features/about/CareerJourney";
 
 export default function AboutPage() {
     return (
@@ -15,6 +16,7 @@ export default function AboutPage() {
             />
             <AboutHero />
             <CoreValues />
+            <CareerJourney />
         </Section>
     )
 }

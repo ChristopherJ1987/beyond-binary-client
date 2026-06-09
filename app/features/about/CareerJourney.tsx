@@ -85,7 +85,7 @@ export default function CareerJourney() {
                         <div
                             key={item.id}
                             className="grid grid-cols-1 md:grid-cols-12 gap-y-4 md:gap-x-8 relative group">
-                            <div className={`md:hidden absolute -left-[31px] top-1.5 w-2 h-2 rounded-full border ${nodeGlow}`} />
+                            <div className={`md:hidden absolute -left-7.75 top-1.5 w-2 h-2 rounded-full border ${nodeGlow}`} />
 
                             <div className="md:col-span-2 md:text-right flex flex-col justify-start pt-1 md:pt-1.5">
                                 <span className="font-header text-sm tracking-wider text-white/40 group-hover:text-white transition-colors duration-300">
@@ -100,7 +100,7 @@ export default function CareerJourney() {
                                 <div className={`w-2.5 h-2.5 rounded-full border-transition-all duration-500 transform group-hover:scale-125 ${nodeGlow}`} />
                             </div>
 
-                            <div className="md:col-span-9 bg-white/[0.01] border border-white/5 hover:border-white/10 rounded-lg p-6 transition-all duration-300 hover:bg-white/[0.02]">
+                            <div className="md:col-span-9 bg-white/1 border border-white/5 hover:border-white/10 rounded-lg p-6 transition-all duration-300 hover:bg-white/2">
 
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                                     <div>

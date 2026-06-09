@@ -19,7 +19,7 @@ export default function AboutHero() {
 
                 {/* Portrait Container Layer */}
                 <div className="lg:col-span-4 w-full flex justify-center">
-                    <div className="relative group w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-white/10 bg-white/5 bg-linear-to-b from-white/5 to-transparent p-1">
+                    <div className="relative group w-full max-w-[320px] aspect-3/4 rounded-lg overflow-hidden border border-white/10 bg-white/5 bg-linear-to-b from-white/5 to-transparent p-1">
 
                         {/* Interactive Neon Glitch Glow Frame */}
                         <div className="absolute inset-0 bg-linear-to-br from-neon-cyan/20 via-transparent to-neon-pink/20 opacity-60 group-hover:opacity-100 transition-opacity duration-500" />

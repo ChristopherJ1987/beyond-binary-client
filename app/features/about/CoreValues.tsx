@@ -1,6 +1,6 @@
 import { RiFocus2Line, RiFlashlightLine, RiHandHeartLine, RiShieldCheckLine } from "react-icons/ri";
 
-interface Valueitem {
+interface ValueItem {
     id: string;
     icon: React.ComponentType<{ className?: string }>;
     title: string;
@@ -70,14 +70,14 @@ export default function CoreValues() {
                     return (
                         <div
                             key={item.id}
-                            className="group relative flex flex-xol justify-between bg-white/]0.02] border border-white/5 rounded-lg p-6 overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-white/10"
+                            className="group relative flex flex-xol justify-between bg-white/]0.02] border border-white/5 rounded-lg p-6 overflow-hidden transition-all duration-300 hover:bg-white/4 hover:border-white/10"
                         >
                             <div className={`absolute top-0 left-0 w-full h-px scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out ${glowClass}`} />
 
                             <div>
                                 <div className="flex justify-between items-center mb-6">
                                     
-                                    <div className={`p-2 rounded-md bg-white/[0.03] border border-white/5 transition-colors duration-300 group-hover:bg-black/20 ${textGlowClass}`}>
+                                    <div className={`p-2 rounded-md bg-white/3 border border-white/5 transition-colors duration-300 group-hover:bg-black/20 ${textGlowClass}`}>
                                         <IconComponent className="w-5 h-5 transition-transform duration-500 group-hover:rotate-12" />
                                     </div>
 

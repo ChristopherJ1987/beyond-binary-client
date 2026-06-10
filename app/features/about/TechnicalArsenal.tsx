@@ -50,7 +50,7 @@ export default function TechnicalArsenal() {
                     return (
                         <div
                             key={index}
-                            className="group relative bg-white/[0.01] border border-white/5 rounded-lg p-6 transition-all duration-300 hover:bg-white/[0.02] hover:border-white/10"
+                            className="group relative bg-white/1 border border-white/5 rounded-lg p-6 transition-all duration-300 hover:bg-white/2 hover:border-white/10"
                         >
                             <h4 className="font-header text-lg uppercase tracking-tight text-white/90 mb-2 group-hover:text-neon-cyan transition-colors duration-300">
                                 {category.title}
@@ -64,7 +64,7 @@ export default function TechnicalArsenal() {
                                 {category.skills.map((skill, idx) => (
                                     <span
                                         key={idx}
-                                        className={`font-body text-xs px-2.5 py-1 rounded-md bg-white/[0.02] border border-white/5 text-white/60 transition-all duration-300 select-none ${pillGlow}`}
+                                        className={`font-body text-xs px-2.5 py-1 rounded-md bg-white/2 border border-white/5 text-white/60 transition-all duration-300 select-none ${pillGlow}`}
                                     >
                                         {skill}
                                     </span>

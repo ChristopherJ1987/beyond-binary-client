@@ -4,6 +4,7 @@ import AboutHero from "~/features/about/AboutHero";
 import CoreValues from "~/features/about/CoreValues";
 import CareerJourney from "~/features/about/CareerJourney";
 import TechnicalArsenal from "~/features/about/TechnicalArsenal";
+import ConversionCard from "~/components/ui/ConversionCard";
 
 export default function AboutPage() {
     return (
@@ -19,6 +20,7 @@ export default function AboutPage() {
             <CoreValues />
             <CareerJourney />
             <TechnicalArsenal />
+            <ConversionCard />
         </Section>
     )
 }

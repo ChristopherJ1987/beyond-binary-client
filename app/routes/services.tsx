@@ -1,5 +1,6 @@
 import Section from "~/components/layout/Section";
 import PageHeader from "~/components/ui/PageHeader";
+import ServiceGrid from "~/features/services/ServiceGrid";
 
 export default function ServicesPage() {
     return (
@@ -11,6 +12,7 @@ export default function ServicesPage() {
                 accentColor="pink"
                 description="Turn-key engineering solutions with modern design patterns and a clean compiler strategy."
             />
+            <ServiceGrid />
         </Section>
     );
 }

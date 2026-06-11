@@ -52,7 +52,7 @@ export default function ServiceGrid() {
                     return (
                         <div
                             key={service.id}
-                            className="group relative flex flex-col justify-between bg-white/[0.01] border border-white/5 rounded-lg p-6 transition-all duration-300 hover:bg-white/[0.02] hover:border-white/10"
+                            className="group relative flex flex-col justify-between bg-white/1 border border-white/5 rounded-lg p-6 transition-all duration-300 hover:bg-white/2 hover:border-white/10"
                         >
                             <div>
                                 <div className="flex justify-between item-baseline mb-4">

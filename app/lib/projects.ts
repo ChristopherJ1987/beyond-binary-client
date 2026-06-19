@@ -19,7 +19,7 @@ export const projects: Project[] = [
         image: "/images/projects/ag_reese_site_screenshot.png",
         tags: ["React", "Next.js", "Vite"],
         link: "https://hive-11.beedev-services.com/",
-        caseStudySlug: "",
+        caseStudySlug: "neural-trading",
         isFeatured: true,
     },
     {

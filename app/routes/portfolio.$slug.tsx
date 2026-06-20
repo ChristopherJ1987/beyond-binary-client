@@ -30,19 +30,12 @@ export default function CaseStudyDetailRoute() {
     return (
         <Section id={`case-study-${study.slug}`} className="bg-cyber-bg min-h-screen pt-24 pb-24 text-white">
 
-            <div className="mb-8">
-                <Link to="/portfolio" className="group font-header text-[10px] tracking-widest uppercase text-white/40 hover:text-neon-cyan flex items-center gap-1.5 transition-colors duration-300">
-                    <RiArrowLeftLine className="w-3.5 h-3.5 transform group-hover:-translate-x-0.5 transition-transform" />
-                    Back to Portfolio Index
-                </Link>
-            </div>
-
             {/* Hero Architecture Block */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
 
                 {/* Left Header Specs */}
                 <div className="lg:col-span-7">
-                    <span className="font-header text-xs tracking-[0.25em] text-neon-cyan uppercase block mb-3">
+                    <span className="font-body text-xs tracking-[0.25em] text-neon-cyan uppercase block mb-3">
                         // Category: {study.category}
                     </span>
                     <h1 className="font-header text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tight text-white/95 mb-4 leading-tight">
@@ -82,7 +75,7 @@ export default function CaseStudyDetailRoute() {
 
                     {/* The Challenge */}
                     <div>
-                        <span className="font-header text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Project_Overview</span>
+                        <span className="font-body text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Project_Overview</span>
                         <h2 className="font-header text-lg uppercase tracking-tight text-white/90 mb-4">The Challenge</h2>
                         <div className="space-y-4 font-body text-sm text-white/50 leading-relaxed">
                             {study.challengeParagraphs.map((para, i) => (
@@ -93,7 +86,7 @@ export default function CaseStudyDetailRoute() {
 
                     {/* The Solution */}
                     <div>
-                        <span className="font-header text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Implementation</span>
+                        <span className="font-body text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Implementation</span>
                         <h2 className="font-header text-lg uppercase tracking-tight text-white/90 mb-4">The Solution</h2>
                         <div className="space-y-4 font-body text-sm text-white/50 leading-relaxed">
                             {study.solutionParagraphs.map((para, i) => (
@@ -109,7 +102,7 @@ export default function CaseStudyDetailRoute() {
 
                     {/* Client Profile Block */}
                     <div className="bg-white/1 border border-white/5 rounded-lg p-5">
-                        <span className="font-header text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
+                        <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
                             <RiUserLine className="text-neon-cyan" /> // Client Profile
                         </span>
                         <div className="space-y-2.5">
@@ -124,7 +117,7 @@ export default function CaseStudyDetailRoute() {
 
                     {/* Project Timeline Block */}
                     <div className="bg-white/1 border border-white/5 rounded-lg p-5">
-                        <span className="font-header text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
+                        <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
                             <RiTimeLine className="text-neon-pink" /> // Project_Timeline
                         </span>
                         <div className="space-y-3">
@@ -139,7 +132,7 @@ export default function CaseStudyDetailRoute() {
 
                     {/* Tech Stack Badge Block */}
                     <div className="bg-white/1 border border-white/5 rounded-lg p-5">
-                        <span className="font-header text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
+                        <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
                             <RiCpuLine className="text-neon-green" /> // Tech_Stack
                         </span>
                         <div className="flex flex-wrap gap-1.5">
@@ -157,7 +150,7 @@ export default function CaseStudyDetailRoute() {
             {/* System Architecture Modules Matrix */}
             <div className="mt-20 border-t border-white/5 pt-12">
                 <div className="mb-8">
-                    <span className="font-header text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// System Architecture</span>
+                    <span className="font-body text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// System Architecture</span>
                     <h2 className="font-header text-lg uppercase tracking-tight text-white/90">{study.modulesTitle}</h2>
                 </div>
 
@@ -166,7 +159,7 @@ export default function CaseStudyDetailRoute() {
                         <div key={mod.id} className="bg-white/1 border border-white/5 rounded-lg p-5 hover:border-white/10 transition-colors duration-300">
                             <div className="flex items-baseline gap-2 mb-2">
                                 <span className="text-[10px] tracking-wider text-neon-cyan font-mono font-bold">[{mod.id}]</span>
-                                <h3 className="font-header text-sm uppercase tracking-tight text-white/80">{mod.title}</h3>
+                                <h3 className="font-mono text-sm uppercase tracking-tight text-white/80">{mod.title}</h3>
                             </div>
                             <p className="font-body text-xs sm:text-sm text-white/40 leading-relaxed">
                                 {mod.description}
@@ -179,7 +172,7 @@ export default function CaseStudyDetailRoute() {
             {/* Performance Impact Row */}
             <div className="mt-20 border-t border-white/5 pt-12">
                 <div className="mb-8">
-                    <span className="font-header text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Operational_Telemetry</span>
+                    <span className="font-body text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Operational_Telemetry</span>
                     <h2 className="font-header text-lg uppercase tracking-tight text-white/90">{study.metricsTitle}</h2>
                 </div>
 

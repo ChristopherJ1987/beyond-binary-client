@@ -40,50 +40,47 @@ export interface CaseStudyData {
 }
 
 export const caseStudies: Record<string, CaseStudyData> = {
-    "neural-trading": {
-        slug: "neural-trading",
-        projectTitle: "Neural Trading Platform",
-        category: "Enterprise Fintech",
-        subtitle: "Real-time algorithmic trading infrastructure for institutional investors",
-        tags: ["Distributed Systems", "AI Integration", "Real-Time"],
-        image: "https://images.unsplash.com/photo-1618995182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    "ag-reese": {
+        slug: "ag-reese",
+        projectTitle: "A.G. Reese & Associates, P.C.",
+        category: "Corporate Web Presence",
+        subtitle: "Establishing a secure, high-fidelity digital footprint and communication node for a trusted CPA firm.",
+        tags: ["React", "Vite", "Node.js", "Express", "Secure Ingestion"],
+        image: "/images/projects/ag_reese_site_screenshot.png",
         challengeParagraphs: [
-            "A top-tier investment firm needed to replace their legacy trading infrastructurethat was struggling with latency issues during high-volume market events. Their existing system, built over 15 years ago, couldn't handle the demands of modern algorithmic trading where milliseconds determine profit margins.",
-            "The platform needed to process over 500,000 transactions per second, integrate machine learning models for predictive analytics, maintain 99.99% uptime, and comply with stringent financial regulations across multiple jurisdictions. Additionally, the system had to support real-time risk assessment while maintaining backwards compatibility with existing trading algorithms."
+            "A.G. Reese & Associates, an established accounting and CPA firm serving Richmond, Virginia, lacked an official digital footprint. In a modern financial climate, having no verified web domain risked losing prospective accounts to competitors.",
+            "The primary operational obstacle was trust and security. Tax accounting deals with sensitive, high-risk financial data, therefore the client needed a platform that unequivocally broadcasted safetly protocols. The architecture had to deliver explicit, transparent guidelines detailing how they interact with clients, reassuring users that the firm would never request sensitive credentials or personal identifying numbers through insecure open-web entry vectors."
         ],
         solutionParagraphs: [
-            "We architected & distributed microservices ecosystem built on Kubernetes, leveraging Rust for ultra-low-latency core trading engines and Go for orchestration services. The system implements CORS pattern with event sourcing to ensure complete audit trails and enable time-travel debugging capabilities.",
-            "Our ML pipeline integrates TensorFlow models via gRPC, allowing data scientists to deploy new trading strategies without system downtime. We implemented a custom memory allocator to minimize garbage collection pauses and used zero-copy networking techniques to shave milliseconds off every transaction. The infrastructure spans three AWS regions with automated failover and uses Redis clusters for sub-milliseconds data access.",
-            "Every component was designed with observability in mind - custom Prometheus exporters, distributed tracing with Jaeger, and real-time anomaly detection using streaming analytics. The result is a platform that not only meets current demands but scales horizontally to accommodate 10x growth."
+            "We engineered a modern Single Page Application (SPA) using a React and Vite chassis on the frontend, optimized with Axios for lightweight asynchronous state transitions. By avoiding cumbersome Content Management Systems like WordPress, we eliminated database injection risks and heavy image reload lag, guaranteeing that users can fetch essential compliance information near-instantly.",
+            "To support secure customer communications, we decoupled the presentation layer from a dedicated backend server orchestration model built with Node.js, Express, and Dotenv. This backend engine uses Nodemailer to parse incoming contact payloads from the client UI and immediately forward them directly into the business owner's secure mail infrastructure, circumventing third-party storage nodes and maintaining strict data containment parameters throughout the intake cycle."
         ],
         clientProfile: [
-            { label: "industry", value: "Financial Services" },
-            { label: "size", value: "$2.58B AUM" },
-            { label: " region", value: "North America" },
-            { label: " users", value: " 250+ Traders" }
+            { label: "industry", value: "Accounting & Tax Services" },
+            { label: "location", value: "Richmond, Virginia" },
+            { label: "frontend", value: "React + Vite SPA" },
+            { label: "backend", value: "Express Server" }
         ],
         timeline: [
-            { date: "Q1_2025", label: "Discovery & Architecture" },
-            { date: "Q2_2025", label: "Core Engine Development" },
-            { date: "Q3_2025", label: "ML Integration & Testing" },
-            { date: "Q4_2025", label: "Production Deployment" }
+            { date: "PHASE_1", label: "Discovery & Privacy Architecture" },
+            { date: "PHASE_2", label: "React Frontend Layout Synthesis" },
+            { date: "PHASE_3", label: "Express Server & Nodemailer Hooking" },
+            { date: "PHASE_4", label: "Production Launch & Domain Mapping" }
         ],
-        techStack: ["Rust", "Go", "Python", "Kubernetes", "gRPC", "PostreSQL", "Redis", "Kafka", "TensorFlow", "AWS", "Prometheus", "Jaeger"],
-        modulesTitle: "Core Infrastructure Modules",
+        techStack: ["React", "Vite", "Node.js", "Express", "Axios", "Nodemailer", "Cors", "Dotenv", "Cookie-Parser"],
+        modulesTitle: "Functional Architecture Nodes",
         modules: [
-            { id: "01", title: "Trading Engine", description: "Ultra-low latency order execution with custom memory management." },
-            { id: "02", title: "ML Pipeline", description: "Real-time predictive analytics and strategy optimization." },
-            { id: "03", title: "Risk Engine", description: "Continuous risk assessment and automated circuit breakers." },
-            { id: "04", title: "Data Ingestion", description: "Multi-source market data aggregation and normalization." },
-            { id: "05", title: "Event Store", description: "Immutable audit log with time-travel capabilities." },
-            { id: "06", title: "Observability", description: "Distributed tracing and anomaly detection system." }
+            { id: "01", title: "Capabilities Registry", description: "Bespoke service matrix detailing accounting, audit alignments, and corporate tax consulting structures." },
+            { id: "02", title: "Information Authority", description: "Dedicated informational routing system outlining historic corporate lineage and credentials." },
+            { id: "03", title: "External Tax Gateway", description: "Vetted routing channels directing clients safely toward verified state and federal regulatory resource centers." },
+            { id: "04", title: "Secure Communication Node", description: "Decoupled contact system pipeline utilizing backend server transport layers to safeguard user inquiries." }
         ],
-        metricsTitle: "Performance Impact",
+        metricsTitle: "System Telemetry Metrics",
         metrics: [
-            { label: "UPTIME", value: "99.99%", subtext: "Systems Availability", accentColor: "cyan" },
-            { label: "LATENCY", value: "-84%", subtext: "Reduction in P99", accentColor: "pink" },
-            { label: "THROUGHPUT", value: "500K/s", subtext: "Transactions Per Second", accentColor: "green" },
-            { label: "COST", value: "-42%", subtext: "Infrastructure Savings", accentColor: "teal" }
+            { label: "SEO ENGINE", value: "100%", subtext: "Perfect Search Index Rating", accentColor: "cyan" },
+            { label: "ACCESSIBILITY", value: "97%", subtext: "Universal Screen Stability",accentColor: "pink" },
+            { label: "SECURITY", value: "100%", subtext: "Zero CMS Vulnerability Surface", accentColor: "green" },
+            { label: "RELIABILITY", value: "99.9%", subtext: "Static Client Uptime Average", accentColor: "teal" }
         ]
-    }
+    },
 };

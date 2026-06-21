@@ -11,8 +11,8 @@ export default function CaseStudySidebar({ study }: CaseStudySidebarProps) {
 
             {/* Client Profile Block */}
             <div className="bg-white/1 border border-white/5 rounded-lg p-5">
-                <span className="font-header text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
-                    <RiUserLine className="text-neon-cyan" /> // Client Profile
+                <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
+                    <RiUserLine className="text-neon-cyan" /> Client Profile
                 </span>
                 <div className="space-y-2.5">
                     {study.clientProfile.map((prof, i) => (
@@ -27,7 +27,7 @@ export default function CaseStudySidebar({ study }: CaseStudySidebarProps) {
             {/* Project Timeline Block */}
             <div className="bg-white/1 border border-white/5 rounded-lg p-5">
                 <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
-                    <RiTimeLine className="text-neon-pink" /> // Project_Timeline
+                    <RiTimeLine className="text-neon-pink" /> Project_Timeline
                 </span>
                 <div className="space-y-3">
                     {study.timeline.map((time, i) => (
@@ -41,8 +41,8 @@ export default function CaseStudySidebar({ study }: CaseStudySidebarProps) {
 
             {/* Tech Stack Badge Block */}
             <div className="bg-white/1 border border-white/5 rounded-lg p-5">
-                <span className="font-header text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
-                    <RiCpuLine className="text-neon-green" /> // Tech_Stack
+                <span className="font-body text-[10px] tracking-widest text-white/30 uppercase mb-4 flex items-center gap-1.5">
+                    <RiCpuLine className="text-neon-green" /> Tech_Stack
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                     {study.techStack.map((tech, i) => (

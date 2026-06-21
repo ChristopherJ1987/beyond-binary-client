@@ -8,7 +8,7 @@ export default function TelemetryImpactRow({ study }: TelemetryImpactRowProps) {
     return (
         <div className="mt-20 border-t border-white/5 pt-12">
             <div className="mb-8">
-                <span className="font-header text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Operational_Telemetry</span>
+                <span className="font-body text-xs tracking-[0.25em] text-white/30 uppercase block mb-2">// Operational_Telemetry</span>
                 <h2 className="font-header text-lg uppercase tracking-tight text-white/90">{study.metricsTitle}</h2>
             </div>
 

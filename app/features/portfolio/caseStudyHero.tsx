@@ -10,7 +10,7 @@ export default function CaseStudyHero({ study }: CaseStudyHeroProps) {
 
             {/* Left Header */}
             <div className="lg:col-span-7">
-                <span className="font-header text-xs tracking-[0.25em] text-neon-cyan uppercase block mb-3">
+                <span className="font-body text-xs tracking-[0.25em] text-neon-cyan uppercase block mb-3">
                     // Category: {study.category}
                 </span>
                 <h1 className="font-header text-2xl sm:text-3xl lg:text-4xl uppercase tracking-tight text-white/95 mb-4 leading-tight">

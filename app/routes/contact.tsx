@@ -1,22 +1,30 @@
 import Section from "~/components/layout/Section";
 import PageHeader from "~/components/ui/PageHeader";
-import ContactHeader from "~/features/contact/ContactHeader";
 import ContactForm from "~/features/contact/ContactForm";
+import ContactSidebar from "~/features/contact/ContactSidebar";
+import ContactFAQ from "~/features/contact/ContactFAQ";
 
-export default function ContactPage() {
+export default function ContactRoute() {
     return (
-        <Section id="contact-view" className="bg-cyber-bg min-h-screen pt-28pb-24 text-white">
-            <PageHeader
-                subTitle="Plug into the Matrix"
-                mainTitleNormal="Initiate"
-                mainTitleAccent="Virtual Contact"
-                accentColor="cyan"
-                description="Secure communications array coming soon. Prepare your variables."
-            />
-            <div className="max-w-2xl mx-auto border border-white/5 rounded-lg p-6 sm:p-10 bg-white/1 shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
-                <ContactHeader />
-                <ContactForm />
-            </div>
+        <Section id="contact-portal" className="bg-cyber-bg min-h-screen pt-24 pb-24 text-white">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <PageHeader
+                    subTitle="Plug into the Matrix"
+                    mainTitleNormal="Initiate"
+                    mainTitleAccent="Virtual Contact"
+                    accentColor="cyan"
+                    description="Secure communications array coming soon. Prepare your variables."
+                />
+                <div className="grid grid-cols-2 lg:grid-cols-12 gap-8 items-start mt-12">
+                    <div className="lg:col-span-8">
+                        <ContactForm />
+                    </div>
+                    <div className="lg:col-span-4">
+                        <ContactSidebar />
+                    </div>
+                </div>
+            </div>  
+            <ContactFAQ />
         </Section>
     );
 }

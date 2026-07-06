@@ -28,7 +28,7 @@ export default function ContactSidebar() {
                     <div>
                         <span className="text-[10px] tracking-widest text-white/70 uppercase block font-mono">// Secure Portal</span>
                         <p className="font-body text-xs text-white/50 mt-1 leading-normal">
-                            All inputs parsed via secure JSON streams. Credentials never retained on raw data stores.
+                            All inputs parsed via secure JSON streams
                         </p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function ContactSidebar() {
                     <div>
                         <span className="text-[10px] tracking-widest text-white/70 uppercase block font-mono">// Geographic Location</span>
                         <p className="font-body text-xs text-white/50 mt-1 leading-normal">
-                            Operating Base: Based in the State of Texas in the United States of America
+                            Operating from the state of Texas
                         </p>
                     </div>
                 </div>

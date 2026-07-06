@@ -56,7 +56,7 @@ export default function ContactForm() {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            placeholder="t_kamado@demon_slayer_core.com"
+                            placeholder="t_kamado@slayer_core.com"
                             className="w-full bg-black/40 border border-white/10 rounded px-3 py-2.5 font-body text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-neon-cyan transition-colors duration-300"
                         />
                     </div>
